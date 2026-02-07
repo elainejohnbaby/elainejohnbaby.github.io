@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Great+Vibes&family=Lavishly+Yours&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+ 
+<title>Baby No.2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="invite-wrapper">
+    <div class="arch">
+
+      <h1 class="lavishly-yours oh">oh baby</h1>
+
+      <h2 class="main-word castoro-titling">NO. 2</h2>
+
+      <p class="subtitle castoro-titling">
+        <span>Please join us for</span>
+        <span class="lavishly-yours elainejohn">elaine & john's</span> 
+        <span>Gender Reveal Baby Sprinkle</span>
+      </p>
+
+       <img src="bears.png" alt="pink and blue teddy bears holding hands" class="bears">
+
+      <div class="divider">
+        <span>SUNDAY</span>
+        <span>|</span>
+        <span>MARCH 1ST</span>
+        <span>|</span>
+        <span>2PM</span>
+      </div>
+
+    <p class="address castoro-titling">
+        <a
+          href="https://maps.app.goo.gl/1CaW4rKnmajUg7ZV9"
+          target="_blank"
+          rel="noopener"
+        >
+          At 9233 Tracyton Blvd<br />
+          Bremerton, WA 98311
+        </a>
+      </p>
+      
+      
+      <button class="rsvp-btn castoro-titling" id="openRSVP">rsvp</button>
+
+
+      <p class="phone castoro-titling">
+        <a href="tel:+13609904454">(360) 990-4454</a>
+      </p>
+       
+      <hr class="line">
+
+      <p class="registry-text">We're excited to celebrate with our close family 
+        and friends! Although we have everything we need from our first little 
+        one Felix, if you feel inclined to give, feel free to check out our 
+        registry 
+        <strong><u>
+          <a hstyle="color: white;" ref="https://www.amazon.com/baby-reg/elaine-alasagas-may-2026-bremerton/3OH7AA84445S3?ref_=cm_sw_r_cp_ud_dp_KMZ6N49G0CAS41Y61R5N" target="_blank">here</a> 
+        </u></strong>
+        or 
+        feel free to give baby no. 2 a jumpstart into the future by donating to
+        his or her college fund 
+        <strong><u>
+          <a style="color: white;" href="https://venmo.com/code?user_id=2106812513910784948" target="_blank">here.</a>
+        </u>
+        </strong>
+          Thank you!
+      </p>
+   
+        <div class="donation-buttons">
+          <button class="round-btn amazon" aria-label="Amazon Registry">
+            <a href="https://www.amazon.com/baby-reg/elaine-alasagas-may-2026-bremerton/3OH7AA84445S3?ref_=cm_sw_r_cp_ud_dp_KMZ6N49G0CAS41Y61R5N" class="round-btn amazon" target="_blank">
+              <img src="amazon_logo.png" alt="Amazon Registry">
+            </a>
+          </button>
+
+          <button class="round-btn venmo" aria-label="Venmo Donation">
+            <a href="https://venmo.com/code?user_id=2106812513910784948" class="round-btn venmo" target="_blank">
+              <img src="Venmo_logo.png" alt="Venmo">
+            </a>
+          </button>
+        </div>
+
+     <div class="thank-you">
+    <div class="thank-you-wrapper">
+      <h1 class="behind castoro-titling">&</h1>
+      <h1 class="castoro-titling">Thank You</h1>
+      <h2 class="lavishly-yours">we love you</h2>
+      <p class="castoro-titling">and are so incredibly grateful to have you a part of our lives!</p>
+    </div>
+  </div>
+
+    </div>
+
+
+  
+   
+  </div>
+
+
+
+  <!-- RSVP MODAL -->
+<div id="rsvpModal" class="modal-overlay">
+  <div class="modal">
+    <button class="close-modal" aria-label="Close">&times;</button>
+
+    <h2 class="castoro-titling">RSVP</h2>
+
+    <form method="POST" action="https://script.google.com/macros/s/AKfycbw4NIBAYuOMG0aekDVP2lXPIk3pYGJyXIhMJPKu3P6rQfS9poxjPJlcFU1iOOtOnIfp/exec">
+
+      <!-- NAME -->
+      <label>Name</label>
+      <input
+        name="Name"
+        type="text"
+        placeholder="First & last name"
+        required
+      />
+
+      <!-- ATTENDANCE -->
+      <label class="section-label">Attendance</label>
+
+      <div class="attendance">
+        <input type="radio" id="YES" name="Confirm" value="YES" required>
+        <label for="YES">YES</label>
+
+        <input type="radio" id="NO" name="Confirm" value="NO">
+        <label for="NO">NO</label>
+
+        <input type="radio" id="MAYBE" name="Confirm" value="MAYBE">
+        <label for="MAYBE">MAYBE</label>
+      </div>
+
+      <!-- CONTACT -->
+      <label>Preferred Contact (email or phone)</label>
+      <input
+        name="Contact"
+        type="text"
+        placeholder="Email or phone number"
+      />
+
+      <!-- MESSAGE -->
+      <label>Message</label>
+      <textarea
+        name="Message"
+        rows="4"
+        placeholder="Number of guests, allergies, or accommodations needed"
+      ></textarea>
+
+      <button type="submit" class="submit-btn castoro-titling">
+        SUBMIT
+      </button>
+    </form>
+  </div>
+</div>
+
+  <!-- RESPONSE MODAL -->
+<div id="responseModal" class="modal-overlay">
+  <div class="modal">
+    <button class="close-modal response-close" aria-label="Close">&times;</button>
+
+    <h2 id="responseTitle" class="castoro-titling">Submitting...</h2>
+    <p id="responseMessage">
+      Please wait while we process your RSVP.
+    </p>
+
+     <div id="calendarInviteContainer" style="margin-top: 20px; display: none;"></div>
+
+    <button class="submit-btn castoro-titling response-ok">
+      OK
+    </button>
+  </div>
+ 
+</div>
+
+
+<script>
+  const rsvpModal = document.getElementById("rsvpModal");
+  const responseModal = document.getElementById("responseModal");
+
+  const openBtn = document.getElementById("openRSVP");
+  const closeButtons = document.querySelectorAll(".close-modal, .response-ok");
+
+  const responseTitle = document.getElementById("responseTitle");
+  const responseMessage = document.getElementById("responseMessage");
+
+  // OPEN RSVP
+  openBtn.addEventListener("click", () => {
+    rsvpModal.style.display = "flex";
+  });
+
+  // CLOSE ANY MODAL
+  closeButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      rsvpModal.style.display = "none";
+      responseModal.style.display = "none";
+    });
+  });
+
+  // CLOSE ON BACKDROP CLICK
+  [rsvpModal, responseModal].forEach(modal => {
+    modal.addEventListener("click", e => {
+      if (e.target === modal) modal.style.display = "none";
+    });
+  });
+
+  // FORM SUBMIT
+  document.querySelector("#rsvpModal form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    rsvpModal.style.display = "none";
+    responseModal.style.display = "flex";
+
+    responseTitle.textContent = "Submitting...";
+    responseMessage.textContent = "Please wait while we process your RSVP.";
+
+    const submitButton = this.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+
+    try {
+      const formData = new FormData(this);
+      const response = await fetch(this.action, {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+  responseTitle.textContent = "Thank You!";
+  responseMessage.textContent =
+    "Your RSVP has been successfully submitted. We’re so excited to celebrate with you on Sunday, March 1st at 2PM!";
+
+  const calendarContainer = document.getElementById("calendarInviteContainer");
+
+  calendarContainer.innerHTML = `
+    <add-to-calendar-button
+      name="Elaine & John's Gender Reveal Baby Sprinkle"
+      description="Join us to celebrate Baby No. 2! We can’t wait to see you."
+      startDate="2025-03-01"
+      endDate="2025-03-01"
+      startTime="14:00"
+      endTime="17:00"
+      location="9233 Tracyton Blvd, Bremerton, WA 98311"
+      timeZone="America/Los_Angeles"
+      options="['Apple','Google','iCal','Microsoft365','Outlook.com','Yahoo']"
+      trigger="click"
+      inline
+      listStyle="modal"
+      buttonStyle="text"
+      lightMode="bodyScheme"
+    >
+    </add-to-calendar-button>
+  `;
+
+  calendarContainer.style.display = "block";
+  this.reset();
+      } else {
+        document.getElementById("calendarInviteContainer").style.display = "none";
+        responseTitle.textContent = "Oops!";
+        responseMessage.textContent =
+          "There was an issue submitting your RSVP. Please try again.";
+      }
+    } catch (err) {
+      responseTitle.textContent = "Connection Error";
+      responseMessage.textContent =
+        "Please check your internet connection and try again.";
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+</script>
+
+
+
+
+
+</body>
+</html>
