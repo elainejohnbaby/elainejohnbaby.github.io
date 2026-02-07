@@ -175,6 +175,14 @@ body {
   background-color:white;
 }
 
+.add_to_cal {
+  margin: 20px 0 50px 0;
+}
+
+.atcb-button {
+  color: white;
+}
+
 .registry-text {
       margin: 30px;
     line-height: 1.7;
