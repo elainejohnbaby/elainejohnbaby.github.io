@@ -183,6 +183,12 @@ body {
   color: white;
 }
 
+.parking {
+  text-align: center;
+  padding: 0 50px 0 50x;
+
+}
+
 .registry-text {
       margin: 30px;
     line-height: 1.7;
